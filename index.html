@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lightsync</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="icon" href="./assets/img/Logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <div>
+                <a href="#home"><img src="./assets/img/Logo.png" alt="Logo" class="Logo"></a>
+                <a href="#home" class="title-logo"><h2>LIGHTSYNC</h2></a>
+            </div>
+            <ul>
+                <li><a href="#prices">Precios</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+                <li><a href="#" id="loginButton">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="loginMenu" class="menu">
+        <div class="menu-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="email" id="emailLogin" placeholder="Correo Electrónico" required>
+                <input type="password" id="passwordLogin" placeholder="Contraseña" required>
+                <button type="submit" id="buttonMenuLogin">Login</button>
+            </form>
+        </div>
+    </div>
+    <section class="section-1" id="home">
+        <div class="info">
+            <h2>Organiza tu día a día facilmente con Lightsync</h2>
+            <ul>
+                <li>Accesibilidad en cualquier lugar</li>
+                <li>Sincronización y Actualización en Tiempo Real</li>
+                <li>Interfaz Intuitiva y Funcional</li>
+                <li>Ahorrarás espacio y recursos</li>
+            </ul>
+            <form>
+                <input type="email" id="inputEmail1"/>
+                <button type="submit" id="button1"><a href="#home">Registrate</a></button>
+            </form>
+        </div>
+        <div>
+            <img src="./assets/img/BackGround1.png" alt="background-1" class="BackGround1">
+        </div>
+    </section>
+    <section class="section-2">
+        <div data-aos="fade-up">
+            <img src="./assets/img/Accesibilidad.png" alt="accesibilidad"/>
+            <h3>Accesibilidad</h2>
+            <h4>Al estar basada en la web, tu agenda está accesible desde cualquier dispositivo con conexión a internet, ya sea un móvil, una tablet o una computadora.</h4>
+        </div>
+        <div data-aos="fade-up">
+            <img src="./assets/img/Sincronización.png" alt="Sincronización"/>
+            <h3>Sincronización en tiempo real</h3>
+            <h4>Cualquier cambio realizado en tu agenda se actualiza de inmediato, lo que garantiza que tengas la versión más reciente de tu programación en todos los dispositivos sincronizados.</h4>
+        </div>
+        <div data-aos="fade-up">
+            <img src="./assets/img/UI.png" alt="Interfaz"/>
+            <h3>Interfaz intuitiva y fácil de usar</h3>
+            <h4>La simplicidad en su diseño permite que los usuarios naveguen sin esfuerzo y gestionen sus tareas rápidamente, sin complicaciones ni curvas de aprendizaje.</h4>
+        </div>
+        <div data-aos="fade-up">
+            <img src="./assets/img/Seguridad.png" alt="Seguridad"/>
+            <h3>Seguridad y respaldo de tus datos</h3>
+            <h4>Al ser una aplicación web, los datos de tu agenda se guardan de forma segura en la nube, lo que evita que se pierdan por fallos de hardware y asegura la protección de tu información personal.</h4>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="sub-1">
+            <h2>Servicio de Agenda</h2>
+            <h3>¡Bienvenido a nuestra agenda web! Aquí podrás organizar tus actividades, crear listas de compras y programar recordatorios fácilmente, todo en un solo lugar. Además, mientras planificas, podrás acceder a nuestras mejores ofertas y promociones exclusivas, diseñadas para ti. Simplifica tu día y aprovecha al máximo tu tiempo mientras disfrutas de una experiencia de compra única. ¡Empieza ahora y organiza tu vida como nunca antes!</h3>
+        </div>
+    </section>
+    <section class="prices" id="prices">
+        <div class="title">
+            <h2>Precios de los planes de Lightsync</h2>
+        </div>
+        <div class="planes">
+            <div class="plan" data-aos="fade-up">
+                <h4>Plan Básico - Gratis</h4>
+                <h3>$0.00</h3>
+                <ul>
+                    <li>Acceso completo a la agenda y organización de tareas.</li>
+                    <li>1 lista de tareas máxima.</li>
+                    <li>Recordatorios básicos por correo electrónico.</li>
+                    <li>Acceso a una cantidad limitada de plantillas personalizadas.</li>
+                    <li>Soporte limitado (FAQ).</li>
+                </ul>
+            </div>
+            <div class="plan" data-aos="fade-up">
+                <h4>Plan Pro - Avanzado</h4>
+                <h3>$9.99 / Mes</h3>
+                <ul>
+                    <li>Todo lo incluido en el Plan Básico.</li>
+                    <li>5 listas de tareas simultáneas.</li>
+                    <li>Recordatorios avanzados por correo electrónico, SMS y notificaciones push.</li>
+                    <li>Acceso completo a todas las plantillas personalizadas.</li>
+                    <li>Integración con calendarios externos (Google Calendar, Outlook, etc.).</li>
+                    <li>Personalización de colores y temas.</li>
+                    <li>Soporte prioritario (respuesta en menos de 24 horas).</li>
+                    <li>1GB de almacenamiento para documentos adjuntos.</li>
+                </ul>
+            </div>
+            <div class="plan" data-aos="fade-up">
+                <h4>Plan Premium - Empresarial</h4>
+                <h3>$24.99 / Mes</h3>
+                <ul>
+                    <li>Todo lo incluido en el Plan Pro.</li>
+                    <li>Listas ilimitadas de tareas.</li>
+                    <li>Recordatorios inteligentes con inteligencia artificial (sugiere tareas y tiempos basados en tus hábitos).</li>
+                    <li>Acceso a análisis y reportes de productividad.</li>
+                    <li>Integración con herramientas de productividad (Trello, Slack, Asana, etc.).</li>
+                    <li>5GB de almacenamiento para documentos y archivos adjuntos.</li>
+                    <li>Funcionalidad de trabajo en equipo (compartir agendas, colaborar en tareas).</li>
+                    <li>Soporte prioritario con chat en vivo.</li>
+                    <li>Funciones exclusivas para personalización avanzada y temas premium.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="info-contact">
+            <h3>Contáctanos</h3>
+            <h4>¿Tienes alguna pregunta o necesitas asistencia? ¡Estamos aquí para ayudarte! Si tienes alguna duda o inquietud, no dudes en ponerte en contacto con nosotros. Nuestro equipo está listo para brindarte el mejor soporte.</h4>
+        </div>
+        <div class="formulario">
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" class="name" id="name"/>
+                <label for="email">Correo</label>
+                <input type="email" class="email" id="email-contact"/>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" class="message"></textarea>
+                <button type="submit" class="submit" id="submit-contact">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ofrecemos soluciones modernas para tus días más atareados. ¡Contáctanos para más información!</p>
+            </div>
+            <div class="section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#home">Inicio</a>
+                <a href="#prices">Precios</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/img/instagram.png" alt="instagram"></a>
+                    <a href="#" title="Twitter"><img src="./assets/img/twitter.png" alt="twitter"/></a>
+                    <a href="#" title="Facebook"><img src="./assets/img/facebook-app-symbol.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Lightsync   . Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <script src="./assets/config.js"></script>
+</body>
+</html>

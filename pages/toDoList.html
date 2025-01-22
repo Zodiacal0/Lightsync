@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lightsync</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="icon" href="./assets/img/Logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/styles/animationsStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <div>
+                <a href="#home"><img src="../assets/img/Logo.png" alt="Logo" class="Logo"></a>
+                <a href="#home" class="title-logo"><h2>LIGHTSYNC</h2></a>
+            </div>
+            <div class="perfil"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="menuIcon"><img src="../assets/img/menuIcon.png" alt="" class="menuIconIMG"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="addContact">Agregar Contacto</a></li>
+                            <li><a href="#" id="favorites">Favoritos</a></li>
+                            <li><a href="#" id="toDo">ToDo List</a></li>
+                            <li><a href="#" id="contacts">Contactos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="userProfile" class="menu">
+        <div class="menu-content">
+            <span class="close">&times;</span>
+            <h2>Perfil</h2>
+            <div class="avatar"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <h4 class="nameUser" id="nameUser"></h4>
+            <h4 class="date" id="date"></h4>
+            <h4 class="contacts">Numero de contactos:</h4>
+            <h4>5</h4>
+        </div>
+    </div>
+    <section>
+        <div class="todo-app">
+            <header class="todo-header">
+                <h1 class="todo-title">To-Do List</h1>
+                <p class="todo-subtitle">Organiza tus tareas de manera efectiva</p>
+            </header>
+            <div class="todo-input-container">
+                <input type="text" class="todo-input" id="todo-input"placeholder="Escribe tu nueva tarea..."/>
+                <select id="priority-select">
+                    <option value="high">Alta</option>
+                    <option value="medium">Media</option>
+                    <option value="low">Baja</option>
+                </select>
+                <button class="todo-add-button" id="add-task-btn">Agregar</button>
+            </div>
+        
+            <ul class="todo-list" id="task-list">
+                <!-- Las tareas se generarán dinámicamente aquí -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ofrecemos soluciones modernas para tus días más atareados. ¡Contáctanos para más información!</p>
+            </div>
+            <div class="section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="../index.html#home">Inicio</a>
+                <a href="../index.html#prices">Precios</a>
+                <a href="../index.html#contact">Contacto</a>
+            </div>
+            <div class="section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                    <a href="#" title="Twitter"><img src="../assets/img/twitter.png" alt="twitter"/></a>
+                    <a href="#" title="Facebook"><img src="../assets/img/facebook-app-symbol.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Lightsync   . Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <script src="../assets/configs/addContact.js"></script>
+    <script src="../assets/configs/toDoLogic.js"></script>
+</body>
+</html>

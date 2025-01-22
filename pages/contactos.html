@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lightsync</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="icon" href="./assets/img/Logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <div>
+                <a href="#home"><img src="../assets/img/Logo.png" alt="Logo" class="Logo"></a>
+                <a href="#home" class="title-logo"><h2>LIGHTSYNC</h2></a>
+            </div>
+            <div class="perfil"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="menuIcon"><img src="../assets/img/menuIcon.png" alt="" class="menuIconIMG"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="addContact">Agregar Contacto</a></li>
+                            <li><a href="#" id="favorites">Favoritos</a></li>
+                            <li><a href="#" id="toDo">ToDo List</a></li>
+                            <li><a href="#" id="contacts">Contactos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="userProfile" class="menu">
+        <div class="menu-content">
+            <span class="close">&times;</span>
+            <h2>Perfil</h2>
+            <div class="avatar"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <h4 class="nameUser" id="nameUser"></h4>
+            <h4 class="date" id="date"></h4>
+            <h4 class="contacts">Numero de contactos:</h4>
+            <h4>5</h4>
+        </div>
+    </div>
+    <section class="contactos">
+        <h2 class="titleContacto">Contactos</h2>
+        <div class="container">
+            <div class="contacto">
+                <div class="avatar">
+                    <img src="../assets/img/Avatar.png" alt="Avatar" id="avatar1" class="avatar1"/>
+                </div>
+                <span class="fav" id="estrella">&#9733;</span>
+                <div class="info">
+                    <h3 id="name1">Nombre: Juan Pérez</h3>
+                    <h3 id="contactMail1">Correo: juan.perez@gmail.com</h3>
+                    <h3 id="phone1">Telefono: 555-123-4567</h3>
+                </div>
+            </div>
+            
+            <div class="contacto">
+                <div class="avatar">
+                    <img src="../assets/img/Avatar2.png" alt="Avatar" id="avatar2"class="avatar2"/>
+                </div>
+                <span class="fav" id="estrella2">&#9733;</span>
+                <div class="info">
+                    <h3 id="name2">Nombre: María López</h3>
+                    <h3 id="contactMail2">Correo: maria.lopez@gmail.com</h3>
+                    <h3 id="phone2">Telefono: 555-987-6543</h3>
+                </div>
+            </div>
+            
+            <div class="contacto">
+                <div class="avatar">
+                    <img src="../assets/img/Avatar4.png" alt="Avatar" id="avatar3" class="avatar3"/>
+                </div>
+                <span class="fav" id="estrella3">&#9733;</span>
+                <div class="info">
+                    <h3 id="name3">Nombre: Carlos Martínez</h3>
+                    <h3 id="contactMail3">Correo: carlos.martinez@gmail.com</h3>
+                    <h3 id="phone3">Telefono: 555-456-7890</h3>
+                </div>
+            </div>
+            
+            <div class="contacto">
+                <div class="avatar">
+                    <img src="../assets/img/Avatar3.png" alt="Avatar" id="avatar4" class="avatar4"/>
+                </div>
+                <span class="fav" id="estrella4">&#9733;</span>
+                <div class="info">
+                    <h3 id="name4">Nombre: Ana González</h3>
+                    <h3 id="contactMail4">Correo: ana.gonzalez@gmail.com</h3>
+                    <h3 id="phone4">Telefono: 555-321-0987</h3>
+                </div>
+            </div>
+            
+            <div class="contacto">
+                <div class="avatar">
+                    <img src="../assets/img/Avatar5.png" alt="Avatar" id="avatar5" class="avatar5"/>
+                </div>
+                <span class="fav" id="estrella5">&#9733;</span>
+                <div class="info">
+                    <h3 id="name5">Nombre: Luis Ramírez</h3>
+                    <h3 id="contactMail5">Correo: luis.ramirez@gmail.com</h3>
+                    <h3 id="phone5">Telefono: 555-654-1234</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ofrecemos soluciones modernas para tus días más atareados. ¡Contáctanos para más información!</p>
+            </div>
+            <div class="section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="../index.html#home">Inicio</a>
+                <a href="../index.html#prices">Precios</a>
+                <a href="../index.html#contact">Contacto</a>
+            </div>
+            <div class="section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                    <a href="#" title="Twitter"><img src="../assets/img/twitter.png" alt="twitter"/></a>
+                    <a href="#" title="Facebook"><img src="../assets/img/facebook-app-symbol.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Lightsync   . Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <script src="../assets/configs/contactConfig.js"></script>
+</body>
+</html>

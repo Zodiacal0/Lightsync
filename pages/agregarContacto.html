@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lightsync</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="icon" href="./assets/img/Logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../assets/styles/animationsStyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <div>
+                <a href="#home"><img src="../assets/img/Logo.png" alt="Logo" class="Logo"></a>
+                <a href="#home" class="title-logo"><h2>LIGHTSYNC</h2></a>
+            </div>
+            <div class="perfil"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="menuIcon"><img src="../assets/img/menuIcon.png" alt="" class="menuIconIMG"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="addContact">Agregar Contacto</a></li>
+                            <li><a href="#" id="favorites">Favoritos</a></li>
+                            <li><a href="#" id="toDo">ToDo List</a></li>
+                            <li><a href="#" id="contacts">Contactos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="userProfile" class="menu">
+        <div class="menu-content">
+            <span class="close">&times;</span>
+            <h2>Perfil</h2>
+            <div class="avatar"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <h4 class="nameUser" id="nameUser"></h4>
+            <h4 class="date" id="date"></h4>
+            <h4 class="contacts">Numero de contactos:</h4>
+            <h4>5</h4>
+        </div>
+    </div>
+    <section>
+        <div class="page-container">
+            <div class="container1">
+                <h1>Nuevo Contacto</h1>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa el número de teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa el correo electrónico" required>
+                    </div>
+                    <button type="submit" id="button1">Guardar Contacto</button>
+                </form>
+            </div>
+        </div>
+        <div class="container2" id="container2">
+            <div class="circle-loader-wrap">
+            <div class="circle-loader-wrap-background"></div>
+            <div class="left-wrap">
+                <div class="semicircle semicircle--pre"></div>
+                <div class="semicircle semicircle--post"></div>
+            </div>
+            <div class="right-wrap">
+                <div class="semicircle semicircle--pre"></div>
+                <div class="semicircle semicircle--post"></div>
+            </div>
+            </div>
+            <div class="text-wrap">
+            <div class="text-container text-container--one">
+                <div class="optimizing">Nuevo Contacto</div>
+                <div class="name">Agregado</div>
+            </div>
+            </div>
+            <div class="text-wrap">
+            <div class="text-container text-container--two">
+                <div class="check-mark"></div>
+            </div>
+            </div>
+            <div class="text-wrap">
+            <div class="text-container text-container--three">
+                <div class="confirmation">Your Account is All Set Up!</div>
+                <div class="confirmation-subtitle">Let's get you on your way to a free night!</div>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ofrecemos soluciones modernas para tus días más atareados. ¡Contáctanos para más información!</p>
+            </div>
+            <div class="section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="../index.html#home">Inicio</a>
+                <a href="../index.html#prices">Precios</a>
+                <a href="../index.html#contact">Contacto</a>
+            </div>
+            <div class="section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                    <a href="#" title="Twitter"><img src="../assets/img/twitter.png" alt="twitter"/></a>
+                    <a href="#" title="Facebook"><img src="../assets/img/facebook-app-symbol.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Lightsync   . Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <script src="../assets/configs/addContact.js"></script>
+</body>
+</html>

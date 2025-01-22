@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lightsync</title>
+    <link rel="stylesheet" href="../assets/style.css"/>
+    <link rel="icon" href="./assets/img/Logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <div>
+                <a href="#home"><img src="../assets/img/Logo.png" alt="Logo" class="Logo"></a>
+                <a href="#home" class="title-logo"><h2>LIGHTSYNC</h2></a>
+            </div>
+            <div class="perfil"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="menuIcon"><img src="../assets/img/menuIcon.png" alt="" class="menuIconIMG"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="addContact">Agregar Contacto</a></li>
+                            <li><a href="#" id="favorites">Favoritos</a></li>
+                            <li><a href="#" id="toDo">ToDo List</a></li>
+                            <li><a href="#" id="contacts">Contactos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="userProfile" class="menu">
+        <div class="menu-content">
+            <span class="close">&times;</span>
+            <h2>Perfil</h2>
+            <div class="avatar"><img src="../assets/img/Avatar.png" alt="" id="profile"/></div>
+            <h4 class="nameUser" id="nameUser"></h4>
+            <h4 class="date" id="date"></h4>
+            <h4 class="contacts">Numero de contactos:</h4>
+            <h4>5</h4>
+        </div>
+    </div>
+    <section class="details">
+        <div class="detail-avatar"><img src="" alt="" id="detail-avatar"></div>
+        <div class="contact-details">
+            <h1>Detalles del Contacto</h1>
+            <ul>
+                <li id="name"><strong>Nombre:</strong> Juan Pérez</li>
+                <li id="phone"><strong>Teléfono:</strong> +502 1234-5678</li>
+                <li id="emailContact"><strong>Email:</strong> juan.perez@example.com</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h3>Sobre Nosotros</h3>
+                <p>Ofrecemos soluciones modernas para tus días más atareados. ¡Contáctanos para más información!</p>
+            </div>
+            <div class="section">
+                <h3>Enlaces Rápidos</h3>
+                <a href="../index.html#home">Inicio</a>
+                <a href="../index.html#prices">Precios</a>
+                <a href="../index.html#contact">Contacto</a>
+            </div>
+            <div class="section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/img/instagram.png" alt="instagram"></a>
+                    <a href="#" title="Twitter"><img src="../assets/img/twitter.png" alt="twitter"/></a>
+                    <a href="#" title="Facebook"><img src="../assets/img/facebook-app-symbol.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Lightsync   . Todos los derechos reservados.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 1000});
+    </script>
+    <script src="../assets/configs/detailsContact.js"></script>
+</body>
+</html>
