@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const simulateServerRequest = async () => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                const isSuccess = Math.random() > 0.2;
+                const isSuccess = Math.random() > 0.05;
                 if (isSuccess) {
                     resolve("Solicitud del servidor aceptada");
                 } else {
